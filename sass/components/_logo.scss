@@ -1,0 +1,33 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__style {
+    &-logo {
+      text-decoration: none;
+      margin-right: 95px;
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
+
+    &-web {
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      color: $accent-color;
+    }
+
+    &-studio {
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      color: $black-color;
+    }
+  }
+}
