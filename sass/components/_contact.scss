@@ -1,11 +1,13 @@
 .contact {
   margin-left: auto;
-  display: flex;
+  // display: flex;
+  display: none;
   padding-left: 0;
 
   &__list {
     margin-right: 50px;
-    display: flex;
+    // display: flex;
+    display: none;
     align-items: center;
 
     &:last-child {
@@ -14,7 +16,8 @@
   }
 
   &__link {
-    display: flex;
+    // display: flex;
+    display: none;
     align-items: center;
     font-weight: 500;
     line-height: 1.14;
