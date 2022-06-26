@@ -430,6 +430,7 @@ body {
   padding-bottom: 118px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img-hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hero.jpg);
+  max-width: 1600px;
   height: 400px;
   margin: 0 auto;
 }
@@ -449,11 +450,11 @@ body {
   color: #ffffff;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 360px;
   margin: 0 auto 30px;
 }
 @media screen and (min-width: 1200px) {
   .hero__text {
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     width: 700px;
