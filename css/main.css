@@ -540,8 +540,8 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-height: 581px;
-  min-width: 528px;
+  min-height: 609px;
+  min-width: 450px;
   background: #ffffff;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
@@ -571,9 +571,10 @@ body {
 .modal__paragraph {
   width: auto;
   margin: 12px;
+  margin-top: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   color: #212121;
 }
 
@@ -588,6 +589,7 @@ body {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -605,13 +607,14 @@ body {
   margin-bottom: 10px;
 }
 .modal-form__input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .modal-form__input:focus {
   border: 1px solid #2196f3;
@@ -632,7 +635,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form__textarea {
-  width: 448px;
+  width: 370px;
   height: 120px;
   padding: 12px 16px;
   margin-bottom: 20px;
@@ -641,6 +644,7 @@ body {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
+  cursor: pointer;
 }
 .modal-form__textarea:focus {
   border: 1px solid #2196f3;
@@ -651,7 +655,7 @@ body {
   margin-bottom: 4px;
   padding-left: 5px;
   font-size: 12px;
-  line-height: 1.166;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
   display: block;
@@ -680,6 +684,7 @@ body {
 
 .modal-link__policy {
   color: #2196f3;
+  cursor: pointer;
 }
 .modal-link__policy:hover {
   color: #2196f3;
@@ -1297,6 +1302,7 @@ body {
 .checkbox {
   position: relative;
   padding-left: 21px;
+  cursor: pointer;
 }
 .checkbox__input {
   position: absolute;
