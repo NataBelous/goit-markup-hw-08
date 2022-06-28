@@ -1,5 +1,4 @@
 .specifics {
-  // display: flex;
   display: block;
   padding-left: 0;
 
@@ -22,7 +21,7 @@
 
   &__title {
     font-weight: 700;
-    line-height: 1.14;
+    line-height: 1.22;
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -30,6 +29,7 @@
 
     @media screen and (min-width: 768px) {
       text-align: left;
+      line-height: 1.14;
     }
   }
 

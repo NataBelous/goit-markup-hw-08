@@ -2,52 +2,70 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-
-
   display: flex;
   align-items: center;
 
+  @media screen and (min-width: 1200px) {
+  // display: flex;
+  // align-items: center;
+  }
+
   &__container {
-    // display: flex;
-    // align-items: baseline;
-
-
     display: block;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      // display: flex;
+      // align-items: baseline;
+    }
     
   }
 
   &__address {
+    @media screen and (min-width: 1200px) {
     // width: 230px;
     // margin-right: 70px;
+    }
   }
 
   &__logo {
     text-decoration: none;
     margin-bottom: 20px;
- // display: block;
-    
-
+ 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+    // display: block;
+    }  
   }
 
   &__style-web {
     font-family: "Raleway";
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     color: $accent-color;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
   }
 
   &__style-studio {
     font-family: "Raleway";
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     color: $white-color;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
   }
 
   &__paragraph {
@@ -56,16 +74,19 @@
     text-decoration: none;
     font-style: normal;
 
-
     display: block;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      // display: block;
+      // text-align: center;
+    }
   }
 
 
 
   &__p {
     text-align: center;
-
 
     margin-top: 60px;
     margin-bottom: 20px;
@@ -75,22 +96,25 @@
 
   &__mail {
     display: block;
-    // margin-bottom: 9px;
-
-
     text-align: center;
     margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 
   &__text {
-    line-height: 1.71;
+    line-height: 1.71;   
     color: $white-color;
     font-style: normal;
-    // margin-bottom: 9px;
-
-
+    
     text-align: center;
     margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 
   &__icon {
@@ -126,7 +150,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // margin-top: 19px;
+    
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 19px;
+    }
 
     & >li {
       margin-right: 10px;
@@ -151,24 +179,25 @@
 
   &-form {
     margin-top: 20px;
-    // display: flex;
+    
     display: block;
     align-items: center;
 
     justify-content: center;
     text-align: center;
 
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+
 
     &__input {
       width: 358px;
       height: 50px;
-      // margin-right: 12px;
       padding: 15px 16px;
-
 
       margin-bottom: 20px;
 
-      
       box-sizing: border-box;
       border: 1px solid rgba(255, 255, 255, 0.3);
       filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
@@ -180,6 +209,10 @@
       align-items: center;
 
       color: rgba(255, 255, 255, 0.6);
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+      }
     }
 
     &__button {
@@ -188,9 +221,8 @@
       background: #2196f3;
       box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
       border-radius: 4px;
-      // margin-right: 0;
+      
       margin: auto;
-
 
       border: none;
       padding: 10px 24px;
@@ -204,6 +236,10 @@
       letter-spacing: 0.06em;
       color: $white-color;
       cursor: pointer;
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 0;
+      }
     }
 
     &__icon {

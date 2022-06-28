@@ -14,6 +14,48 @@
   }
 }
 
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.18;
+  }
+}
+
 .hidden {
   display: none;
+}
+
+
+
+
+
+.nav__button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.nav__button .icon-cross {
+  display: none;
+}
+
+.nav__button .is-open .icon-cross {
+  display: block;
+}
+
+.nav__button .is-open .icon-menu {
+  display: none;
+}
+
+.nav-menu {
+
 }
