@@ -3,20 +3,35 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+
+  display: flex;
+  align-items: center;
+
   &__container {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
+
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
   }
 
   &__address {
-    width: 230px;
-    margin-right: 70px;
+    // width: 230px;
+    // margin-right: 70px;
   }
 
   &__logo {
     text-decoration: none;
-    display: block;
     margin-bottom: 20px;
+ // display: block;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__style-web {
@@ -40,18 +55,42 @@
     color: $adres-color;
     text-decoration: none;
     font-style: normal;
+
+
+    display: block;
+    text-align: center;
   }
+
+
+
+  &__p {
+    text-align: center;
+
+
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+
 
   &__mail {
     display: block;
-    margin-bottom: 9px;
+    // margin-bottom: 9px;
+
+
+    text-align: center;
+    margin-bottom: 8px;
   }
 
   &__text {
     line-height: 1.71;
     color: $white-color;
     font-style: normal;
-    margin-bottom: 9px;
+    // margin-bottom: 9px;
+
+
+    text-align: center;
+    margin-bottom: 8px;
   }
 
   &__icon {
@@ -67,7 +106,6 @@
     color: $white-color;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
@@ -88,7 +126,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 19px;
+    // margin-top: 19px;
 
     & >li {
       margin-right: 10px;
@@ -113,15 +151,24 @@
 
   &-form {
     margin-top: 20px;
-    display: flex;
+    // display: flex;
+    display: block;
     align-items: center;
+
+    justify-content: center;
+    text-align: center;
+
 
     &__input {
       width: 358px;
       height: 50px;
-      margin-right: 12px;
+      // margin-right: 12px;
       padding: 15px 16px;
 
+
+      margin-bottom: 20px;
+
+      
       box-sizing: border-box;
       border: 1px solid rgba(255, 255, 255, 0.3);
       filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
@@ -141,7 +188,10 @@
       background: #2196f3;
       box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
       border-radius: 4px;
-      margin-right: 0;
+      // margin-right: 0;
+      margin: auto;
+
+
       border: none;
       padding: 10px 24px;
 

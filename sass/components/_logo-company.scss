@@ -1,5 +1,6 @@
 .logo {
-  display: flex;
+  // display: flex;
+  // display: block;
   align-items: center;
   justify-content: center;
 
@@ -13,7 +14,8 @@
 
   &__link {
     color: $social-color;
-    width: 170px;
+    // width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid $social-color;
     display: flex;
