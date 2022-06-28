@@ -457,7 +457,7 @@ body {
   .hero__text {
     font-size: 44px;
     line-height: 1.36;
-    width: 700px;
+    max-width: 700px;
   }
 }
 .hero__button {
@@ -698,48 +698,68 @@ body {
 }
 
 .section-images {
-  padding-top: 0;
+  display: none;
 }
-.section-images__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 0;
+@media screen and (min-width: 1200px) {
+  .section-images {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .section-images__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+  }
 }
 
 .list-images {
-  margin-right: 30px;
-  width: 370px;
+  display: none;
 }
-.list-images:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .list-images {
+    margin-right: 30px;
+    width: 370px;
+  }
 }
-.list-images__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: 700;
-  line-height: 1.142;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  width: 370px;
-  height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
-  margin-right: 30px;
-  position: absolute;
-  bottom: 0;
+@media screen and (min-width: 1200px) {
+  .list-images:last-child {
+    margin-right: 0;
+  }
 }
-.list-images__text:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .list-images__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 700;
+    line-height: 1.142;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    margin-right: 30px;
+    position: absolute;
+    bottom: 0;
+  }
 }
-.list-images__block {
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .list-images__text:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-images__block {
+    position: relative;
+  }
 }
 
 .team {
