@@ -710,8 +710,6 @@ body {
   .section-images {
     padding-top: 0;
   }
-}
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
   .section-images__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -721,51 +719,38 @@ body {
 }
 
 .list-images {
-  display: none;
+  margin-right: 30px;
+  width: 370px;
 }
-@media screen and (min-width: 1200px) {
-  .list-images {
-    margin-right: 30px;
-    width: 370px;
-  }
+.list-images:last-child {
+  margin-right: 0;
 }
-@media screen and (min-width: 1200px) {
-  .list-images:last-child {
-    margin-right: 0;
-  }
+.list-images__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 700;
+  line-height: 1.142;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  margin-right: 30px;
+  position: absolute;
+  bottom: 0;
 }
-@media screen and (min-width: 1200px) {
-  .list-images__text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-weight: 700;
-    line-height: 1.142;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    width: 370px;
-    height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
-    margin-right: 30px;
-    position: absolute;
-    bottom: 0;
-  }
+.list-images__text:last-child {
+  margin-right: 0;
 }
-@media screen and (min-width: 1200px) {
-  .list-images__text:last-child {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .list-images__block {
-    position: relative;
-  }
+.list-images__block {
+  position: relative;
 }
 
 .team {
@@ -858,18 +843,34 @@ body {
 }
 
 .logo {
+  width: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /*&__list {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }*/
 }
 .logo__list {
+  margin-bottom: 30px;
+}
+.logo__list:nth-child(odd) {
   margin-right: 30px;
 }
-.logo__list:last-child {
-  margin-right: 0;
+.logo__list:nth-child(-n+2) {
+  margin-bottom: 0;
 }
 .logo__link {
   color: #afb1b8;

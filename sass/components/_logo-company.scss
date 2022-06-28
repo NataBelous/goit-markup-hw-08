@@ -1,16 +1,32 @@
 .logo {
-  // display: flex;
-  // display: block;
+  width: 50%;
+  flex-wrap: wrap;
+  // flex-basis: calc((100% - 30px) / 2);
+
+
+  display: flex;
   align-items: center;
   justify-content: center;
 
   &__list {
+    margin-bottom: 30px;
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(-n+2) {
+      margin-bottom: 0;
+    }
+  }
+
+  /*&__list {
     margin-right: 30px;
 
     &:last-child {
       margin-right: 0;
     }
-  }
+  }*/
 
   &__link {
     color: $social-color;
