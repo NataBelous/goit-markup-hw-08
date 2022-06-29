@@ -1,13 +1,16 @@
 .contact {
   margin-left: auto;
-  // display: flex;
   display: none;
   padding-left: 0;
 
+  @media screen and (min-width: 768px){
+    display: flex;
+  }
+
   &__list {
     margin-right: 50px;
-    // display: flex;
-    display: none;
+    display: flex;
+    // display: none;
     align-items: center;
 
     &:last-child {
@@ -16,8 +19,8 @@
   }
 
   &__link {
-    // display: flex;
-    display: none;
+    display: flex;
+    // display: none;
     align-items: center;
     font-weight: 500;
     line-height: 1.14;

@@ -3,6 +3,7 @@
   // flex-wrap: wrap;
 
   display: block;
+  margin: 0;
 
   &__paragraph {
     margin-bottom: 30px;
@@ -24,8 +25,6 @@
   }
 
   &__item {
-    width: 450px;
-    height: 404px;
     cursor: pointer;
     margin-right: 0;
 
@@ -55,8 +54,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 450px;
-    height: 294px;
+    
     background-color: rgba(33, 150, 243, 0.9);
     color: $white-color;
     transform: translateY(125%);
@@ -70,6 +68,7 @@
 
     // padding: 63px 24px;
     // width: 370px;
+    // height: 294px;
   }
 
   &__info {
@@ -77,8 +76,6 @@
     border: 1px solid #eeeeee;
     border-top: none;
 
-    
-    height: 110px;
   }
 
   &__name {
