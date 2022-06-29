@@ -356,6 +356,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .nav__style-logo {
   text-decoration: none;
@@ -407,7 +408,6 @@ body {
 .list-link {
   font-weight: 500;
   line-height: 1.14;
-  display: none;
   padding-left: 0;
 }
 @media screen and (min-width: 768px) {
@@ -1369,6 +1369,8 @@ body {
   margin: 0;
   border: none;
   background-color: transparent;
+  position: absolute;
+  right: 0;
 }
 @media screen and (min-width: 768px) {
   .nav__button {
@@ -1380,11 +1382,11 @@ body {
   display: none;
 }
 
-.nav__button .is-open .nav__icon-cross {
+.nav__button.is-open .nav__icon-cross {
   display: block;
 }
 
-.nav__button .is-open .nav__icon-menu {
+.nav__button.is-open .nav__icon-menu {
   display: none;
 }
 

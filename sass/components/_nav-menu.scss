@@ -5,6 +5,9 @@
   border: none;
   background-color: transparent;
 
+  position: absolute;
+  right: 0;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -14,16 +17,14 @@
   display: none;
 }
   
-.nav__button .is-open .nav__icon-cross {
+.nav__button.is-open .nav__icon-cross {
   display: block;
 }
 
-.nav__button .is-open .nav__icon-menu {
+.nav__button.is-open .nav__icon-menu {
   display: none;
 }
   
-
-
 
 .menu-container {
   display: none;
