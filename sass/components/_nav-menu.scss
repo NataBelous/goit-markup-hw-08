@@ -1,0 +1,42 @@
+.nav__button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav__button .nav__icon-cross {
+  display: none;
+}
+  
+.nav__button .is-open .nav__icon-cross {
+  display: block;
+}
+
+.nav__button .is-open .nav__icon-menu {
+  display: none;
+}
+  
+
+
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  /* height: ;
+
+  padding: ; */
+  text-align: center;
+}
+
+.menu-container.is-open {
+  display: block;
+}
