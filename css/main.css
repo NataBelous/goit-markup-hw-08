@@ -954,27 +954,21 @@ body {
   margin-bottom: 30px;
   width: calc((100% - 30px) / 2);
 }
-@media screen and (min-width: 1200px) {
-  .logo__list {
-    margin-right: 30px;
-    margin-bottom: initial;
-    width: initial;
-  }
-}
-.logo__list:nth-child(odd) {
-  margin-right: 30px;
-}
-.logo__list:last-child(-n+2) {
+.logo__list:nth-last-child(-n+2) {
   margin-bottom: 0;
 }
-@media screen and (min-width: 1200px) {
-  .logo__list:last-child(-n+2) {
-    margin-bottom: initial;
+@media screen and (min-width: 768px) {
+  .logo__list {
+    width: 226px;
+  }
+  .logo__list:nth-last-child(-n+3) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  .logo__list:last-child {
-    margin-right: 0;
+  .logo__list {
+    margin-bottom: initial;
+    width: 170px;
   }
 }
 .logo__link {
