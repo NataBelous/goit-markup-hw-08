@@ -30,14 +30,121 @@
   display: none;
   position: absolute;
   top: 100%;
+  // top: 0;
   left: 0;
-  width: 100%;
-  /* height: ;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  text-align:left;
+  z-index: 1;
 
-  padding: ; */
-  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px 
+                          rgba(0, 0, 0, 0.08), 0px 1px 3px 
+                          rgba(0, 0, 0, 0.16);
+
+  &.is-open {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
-.menu-container.is-open {
+
+.menu-contact {
   display: block;
+  align-items: left;
+
+  &__list {
+  margin-bottom: 32px;
+  // align-items:left;
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    color: $title-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:focus,
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  &__tel {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  
+    color: $accent-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+  
+.menu-list-link {
+  font-weight: 500;
+  line-height: 1.14;
+  padding-left: 0;
+  display: block;
+
+  &__marker {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+      
+  &__page {
+    color: $text-color;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  &__active {
+    color: $accent-color;
+  }
+}
+
+.menu-soc {
+  display: flex;
+  // margin-right: 20px;
+
+  // &:last-child {
+  //   margin-right: 0;
+  // }
+}
+
+.menu-soc__list {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
 }
