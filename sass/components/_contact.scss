@@ -5,17 +5,20 @@
 
   @media screen and (min-width: 768px) {
     display: initial;
-    display: flex;
+    display: block;
+    
   }
 
   &__list {
-    margin-right: 50px;
-    display: flex;
+    
+    // margin-right: 50px;
+    
+    // display: flex;
     align-items: center;
 
-    &:last-child {
-      margin-right: 0;
-    }
+    // &:last-child {
+    //   margin-right: 0;
+    // }
   }
 
   &__link {
@@ -26,10 +29,16 @@
     color: $title-color;
     text-decoration: none;
     letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    @media screen and (min-width: 768px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: 1.17;
+    }
 
     &:focus,
     &:hover {
