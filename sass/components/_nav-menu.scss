@@ -6,7 +6,7 @@
   background-color: transparent;
 
   position: absolute;
-  right: 0;
+  right: 10px;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -25,12 +25,10 @@
   display: none;
 }
   
-
 .menu-container {
   display: none;
   position: absolute;
   top: 100%;
-  // top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -46,9 +44,9 @@
   &.is-open {
     display: block;
   }
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
+  // @media screen and (min-width: 768px) {
+  //   display: none;
+  // }
 }
 
 
@@ -143,7 +141,6 @@
     margin-right: 0;
   }
 }
-
 
 .menu-soc__link {
   text-decoration: none;
