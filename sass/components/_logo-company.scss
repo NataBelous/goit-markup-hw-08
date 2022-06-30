@@ -8,6 +8,7 @@
 
   &__list {
     margin-bottom: 30px;
+    width: calc((100% - 30px) / 2);
 
     &:nth-child(odd) {
       margin-right: 30px;
@@ -29,7 +30,6 @@
   &__link {
     color: $social-color;
     // width: 170px;
-    width: calc(50vw - 30px);
     height: 92px;
     border: 1px solid $social-color;
     display: flex;

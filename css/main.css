@@ -513,12 +513,20 @@ body {
   height: 400px;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img-hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hero.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
     margin: 0 auto;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img-hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hero.jpg);
   }
 }
 .hero__text {
@@ -721,11 +729,28 @@ body {
   display: block;
   padding-left: 0;
 }
+@media screen and (min-width: 768px) {
+  .specifics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: initial;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .specifics {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    display: initial;
+  }
+}
+@media screen and (min-width: 768px) {
+  .specifics__list {
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -771,6 +796,16 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .specifics__icon {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specifics__icon {
+    width: 270px;
+  }
 }
 
 .section-images {
@@ -940,6 +975,7 @@ body {
 }
 .logo__list {
   margin-bottom: 30px;
+  width: calc((100% - 30px) / 2);
 }
 .logo__list:nth-child(odd) {
   margin-right: 30px;
@@ -949,7 +985,6 @@ body {
 }
 .logo__link {
   color: #afb1b8;
-  width: calc(50vw - 30px);
   height: 92px;
   border: 1px solid #afb1b8;
   display: -webkit-box;
@@ -1151,6 +1186,7 @@ body {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
+  margin: auto;
   margin-bottom: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1485,9 +1521,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 64px;
+  margin-bottom: 48px;
 }
 
 .menu-soc__list {
+  margin-right: 20px;
+}
+.menu-soc__list:last-child {
+  margin-right: 0;
+}
+
+.menu-soc__link {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
