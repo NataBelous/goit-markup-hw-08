@@ -5,15 +5,21 @@
 
   @media screen and (min-width: 768px) {
     display: block;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inherit;
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
   }
 
   &__list {
     @media screen and (min-width: 1200px) {
     margin-right: 50px;
-    
     display: flex;
     align-items: center;
 
@@ -40,8 +46,8 @@
     }
 
     @media screen and (min-width: 1200px) {
-      padding-top: 32px;
-      padding-bottom: 32px;
+      padding-top: 28px;
+      padding-bottom: 28px;
     }
 
     &:focus,
