@@ -1044,11 +1044,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .footer {
-    padding-top: 65px;
-  }
-}
 .footer__container {
   display: block;
   -webkit-box-pack: center;
@@ -1088,8 +1083,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer__address {
-    width: 230px;
     margin-right: 70px;
+    margin-left: 0;
   }
 }
 .footer__logo {
@@ -1105,16 +1100,15 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (min-width: 768px) {
-  .footer__logo {
-    padding-top: 26px;
-    padding-bottom: 26px;
-    margin-left: 15px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer__logo {
     display: block;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
   }
 }
 .footer__style-web {
@@ -1151,15 +1145,16 @@ body {
   display: block;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__paragraph {
+    display: initial;
+    text-align: initial;
+  }
+}
 .footer__p {
   text-align: center;
   margin-top: 60px;
   margin-bottom: 20px;
-}
-@media screen and (min-width: 768px) {
-  .footer__p {
-    margin-top: 5px;
-  }
 }
 .footer__mail {
   display: block;
@@ -1169,6 +1164,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__mail {
     margin-bottom: 9px;
+    text-align: initial;
   }
 }
 .footer__text {
@@ -1181,6 +1177,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__text {
     margin-bottom: 9px;
+    text-align: initial;
   }
 }
 .footer__icon {
@@ -1274,6 +1271,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-align: initial;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
   }
 }
 .footer-form__input {
@@ -1304,6 +1305,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-form__input {
     margin-right: 12px;
+    margin: 0;
   }
 }
 .footer-form__button {
@@ -1332,7 +1334,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-form__button {
-    margin-right: 0;
+    margin: 0;
   }
 }
 .footer-form__icon {
