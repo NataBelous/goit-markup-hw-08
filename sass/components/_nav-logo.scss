@@ -55,9 +55,7 @@
   }
 
   &__button {
-    display: inline-flex;
     padding: 0;
-    margin: 0;
     border: none;
     background-color: transparent;
     z-index: 2;
@@ -68,18 +66,18 @@
       display: none;
     }
 
-    &.nav__icon-cross {
+    .nav__icon-cross {
       display: none;
     }
 
     &.is-open {
       position: fixed;
 
-      &.is-open.nav__icon-cross {
+      &.is-open .nav__icon-cross {
         display: block;
       }
 
-      &.is-open.nav__icon-menu {
+      &.is-open .nav__icon-menu {
         display: none;
       }
     }

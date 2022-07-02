@@ -1,34 +1,3 @@
-// .nav__button {
-//   display: inline-flex;
-//   padding: 0;
-//   margin: 0;
-//   border: none;
-//   background-color: transparent;
-//   z-index: 2;
-//   position: absolute;
-//   right: 10px;
-
-//   @media screen and (min-width: 768px) {
-//     display: none;
-//   }
-
-//   &.nav__icon-cross {
-//     display: none;
-//   }
-
-//   &.is-open {
-//     position: fixed;
-
-//     &.nav__icon-cross {
-//         display: block;
-//       }
-//     &.nav__icon-menu {
-//       display: none;
-//     }
-//   }
-// }
-
-  
 .menu {
   display: none;
   position: fixed;
@@ -37,13 +6,11 @@
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  text-align:left;
+  text-align: left;
   z-index: 1;
 
   background: #FFFFFF;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px 
-                          rgba(0, 0, 0, 0.08), 0px 1px 3px 
-                          rgba(0, 0, 0, 0.16);      
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
   &.is-open {
     display: block;
@@ -67,6 +34,7 @@
       margin-right: 0;
     }
   }
+
   &__page {
     color: $text-color;
     text-decoration: none;
@@ -85,13 +53,13 @@
 
   &__active {
     color: $accent-color;
-  } 
+  }
 
   &__contact-bottom {
     position: absolute;
     bottom: 48px;
   }
-  
+
   &__contact {
     display: block;
     align-items: left;
@@ -104,7 +72,7 @@
       margin-bottom: 0;
     }
   }
-  
+
   &__contact-link {
     color: $title-color;
     text-decoration: none;
@@ -120,7 +88,7 @@
       color: $accent-color;
     }
   }
-  
+
   &__contact-tel {
     text-decoration: none;
     font-weight: 500;
@@ -144,15 +112,15 @@
   flex-wrap: wrap;
 
   &__list::after {
-      content: "";
-      display: inline-block;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      width: 22px;
-      height: 0;
-      transform: rotate(90deg);
-      vertical-align: middle;
-    }
-  
+    content: "";
+    display: inline-block;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    width: 22px;
+    height: 0;
+    transform: rotate(90deg);
+    vertical-align: middle;
+  }
+
   &__list:last-child::after {
     display: none;
   }
@@ -166,6 +134,3 @@
     color: $accent-color;
   }
 }
- 
-
-

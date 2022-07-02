@@ -11,7 +11,7 @@
     overflow: hidden;
     clip: rect(0 0 0 0);
 
-    &:checked + .checkbox__text {
+    &:checked+.checkbox__text {
       background-color: $accent-color;
       background-repeat: no-repeat;
       background-position: center center;
