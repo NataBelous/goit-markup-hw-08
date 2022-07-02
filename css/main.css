@@ -1686,12 +1686,18 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
-.menu-soc__list {
-  margin-right: 20px;
+.menu-soc__list::after {
+  content: "";
+  display: inline-block;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  width: 22px;
+  height: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  vertical-align: middle;
 }
-.menu-soc__list:last-child {
-  margin-right: 0;
+.menu-soc__list:last-child::after {
+  display: none;
 }
 
 .menu-soc__link {
