@@ -199,6 +199,10 @@
       margin-top: 60px;
       width: 450px;
     }
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+    }
+
   }
 
   &-form {
@@ -241,6 +245,7 @@
       @media screen and (min-width: 1200px) {
         margin-right: 12px;
         margin: 0;
+        width: 358px;
       }
     }
 
@@ -268,6 +273,7 @@
 
       @media screen and (min-width: 1200px) {
         margin: 0;
+        margin-left: 15px;
       }
     }
 
